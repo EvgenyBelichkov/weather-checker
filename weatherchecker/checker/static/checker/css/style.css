@@ -1,0 +1,68 @@
+.background {
+    background-color: #f8f6f6;
+    height: 145px;
+}
+
+.background2 {
+    background-color: #353535;
+    height: 500px;
+    border: 1px solid green;
+}
+
+.cloud {
+    width: 110px;
+}
+
+.scroll {
+    width: 25px;
+}
+
+.box1 {
+    display: flex;
+    height: 100%;
+}
+
+.box2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75%;
+    flex-direction: column;
+    flex: 3;
+}
+
+.box3 {
+    display: flex;
+    justify-content: center;
+    flex: 9;
+    align-items: center;
+}
+
+.box4 {
+    display: flex;
+    height: 25%;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px;
+}
+
+.btn {
+    font-size: 30px;
+}
+
+.mission {
+    margin-top: 30px;
+    font-size: 72px;
+    color: #d6d5d5;
+}
+
+.mission1 {
+    font-size: 36px;
+    color: #d6d5d5;
+}
+
+.mission2 {
+    font-size: 12px;
+    color: #d6d5d5;
+}

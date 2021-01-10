@@ -1,0 +1,24 @@
+{% extends 'checker/main.html' %}
+{% load static %}
+
+{% block title %}Main page{% endblock %}
+
+{% block content %}
+    <div class="container background2">
+        <div class="box2">
+            <div class="mission">AFTER RAIN COMES FAIR WEATHER</div>
+            <div class="mission1">CHECK WEATHER NOW TO BE READY</div>
+        </div>
+        <div class="box4">
+            <img src="{% static 'checker/img/mouse-scrolling.png' %}" class="scroll" alt="">
+            <div class="mission2">SCROLL DOWN</div>
+        </div>
+    </div>
+    <div class="container">
+        <form id="check" action="{% url 'city' %}">
+            <label for="city_name">Input name of city</label>
+            <input type="text" placeholder="Moscow" id="city_name" required name="request_city"><br>
+            <input type="submit" value="send">
+        </form>
+    </div>
+{% endblock %}

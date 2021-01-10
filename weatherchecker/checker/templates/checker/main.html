@@ -1,0 +1,26 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> {% block title %}{% endblock %} </title>
+    <link rel="stylesheet" href="{% static 'checker/css/reset.css' %}">
+    <link rel="stylesheet" href="{% static 'checker/css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'checker/css/style.css' %}">
+</head>
+<body>
+    <div class="container box1 background">
+        <div class="box2">
+            <img src="{% static 'checker/img/weather.png' %}" class="cloud" alt="">
+        </div>
+        <div class="box3">
+            <a href="#check" class="btn btn-outline-dark">check the weather</a>
+        </div>
+    </div>
+
+    {% block content %}
+    {% endblock %}
+
+</body>
+</html>

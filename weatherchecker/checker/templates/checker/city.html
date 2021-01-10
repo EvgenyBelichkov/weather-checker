@@ -1,0 +1,22 @@
+{% extends 'checker/main.html' %}
+{% load static %}
+
+{% block title %}Main page{% endblock %}
+
+{% block content %}
+    <div class="container background2">
+        <div class="box2">
+            <div class="mission">Temperature</div>
+            {% if result > 0 %}
+                <div class="mission1">+{{ result }} ℃</div>
+            {% else %}
+                <div class="mission1">{{ result }} ℃</div>
+            {% endif %}
+        </div>
+        <div class="box4">
+            <a href="{% url 'main' %}">MAIN PAGE</a>
+        </div>
+
+
+
+{% endblock %}
