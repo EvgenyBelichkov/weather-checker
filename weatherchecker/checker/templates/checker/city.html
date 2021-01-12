@@ -5,16 +5,25 @@
 
 {% block content %}
     <div class="container background2">
-        <div class="box2">
-            <div class="mission">Temperature</div>
-            {% if result > 0 %}
-                <div class="mission1">+{{ result }} ℃</div>
+        <div class="box7 mission1">
+            <div style="font-weight: 700; width: 70%" class="box8"> {{ name }} </div>
+            <div class="widthresult box8">Temperature</div>
+            {% if main.temp > 0 %}
+                <div class="widthresult box8"> +{{ main.temp }} ℃</div>
             {% else %}
-                <div class="mission1">{{ result }} ℃</div>
+                <div class="widthresult box8"> {{ main.temp }} ℃</div>
             {% endif %}
+            <div class="widthresult box8"> Feels like </div>
+            {% if main.feels_like > 0 %}
+                <div class="widthresult box8"> +{{ main.feels_like }} ℃</div>
+            {% else %}
+                <div class="widthresult box8"> {{ main.feels_like }} ℃</div>
+            {% endif %}
+            <div class="widthresult box8"> Wind speed </div>
+            <div class="widthresult box8"> {{ wind.speed }} m/sec </div>
         </div>
         <div class="box4">
-            <a href="{% url 'main' %}">MAIN PAGE</a>
+            <a href="{% url 'main' %}" class="btn btn-outline-light">MAIN PAGE</a>
         </div>
 
 

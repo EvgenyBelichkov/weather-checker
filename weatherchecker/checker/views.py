@@ -19,5 +19,7 @@ def city(request):
     }
     res = requests.get(api_url, params)
     data = res.json()
-    return render(request, 'checker/city.html', {'result': data['main']['temp']})
-    #return render(request, 'checker/city.html')
+    return render(request, 'checker/city.html', data)
+
+def contacts(request):
+    return render(request, 'checker/contacts.html')

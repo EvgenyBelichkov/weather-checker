@@ -1,0 +1,23 @@
+{% extends 'checker/main.html' %}
+{% load static %}
+
+{% block title %}Main page{% endblock %}
+
+{% block content %}
+    <div class="container background2">
+        <div class="box7 mission1">
+            <div style="font-weight: 700; width: 70%" class="box8"> Contacts </div>
+            <div class="widthresult box8">Name</div>
+            <div class="widthresult box8"> Belichkov Evgeny </div>
+            <div class="widthresult box8"> Email </div>
+            <div class="widthresult box8"> evgenybelichkov@gmail.com</div>
+            <div class="widthresult box8"> Phone number </div>
+            <div class="widthresult box8"> +7(911)7967467 </div>
+        </div>
+        <div class="box4">
+            <a href="{% url 'main' %}" class="btn btn-outline-light">MAIN PAGE</a>
+        </div>
+
+
+
+{% endblock %}
